@@ -57,6 +57,18 @@ export default function Projects() {
       tech: "React",
       link: "https://ayanabilelsayed.github.io/CRUDS/",
     },
+     {
+      id: 6,
+      title: "E-Commerce",
+      category: "Web App",
+      description:
+        "A responsive e-commerce website built with React and Firebase. It allows users to browse, add, and purchase products.",
+      image: "/Image/E-Commerce.png",
+      par: "JavaScript",
+      tech: "React",
+      link: "https://ayanabilelsayed.github.io/project4/",
+    },
+
   ];
 
 
