@@ -1,13 +1,130 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.skill{
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    transition: .3s;
+}
+
+.skill:hover{
+    transform: translateY(-5px);
+}
+
+.skill label{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skill span{
+    display: block;
+    text-align: right;
+    color: #38bdf8;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.progress{
+    width: 100%;
+    height: 10px;
+    background: #334155;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.progress-bar{
+    width: 0;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(90deg,#06b6d4,#3b82f6);
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+/* نسب المهارات */
+
+.html{animation: html 2s forwards;}
+@keyframes html{
+    from{width:0;}
+    to{width:95%;}
+}
+
+.html5{animation: html5 2s forwards;}
+@keyframes html5{
+    from{width:0;}
+    to{width:95%;}
+}
+
+.css{animation: css 2s forwards;}
+@keyframes css{
+    from{width:0;}
+    to{width:90%;}
+}
+
+.css3{animation: css3 2s forwards;}
+@keyframes css3{
+    from{width:0;}
+    to{width:90%;}
+}
+
+.javascript{animation: javascript 2s forwards;}
+@keyframes javascript{
+    from{width:0;}
+    to{width:85%;}
+}
+
+.tailwind{animation: tailwind 2s forwards;}
+@keyframes tailwind{
+    from{width:0;}
+    to{width:90%;}
+}
+
+.react{animation: react 2s forwards;}
+@keyframes react{
+    from{width:0;}
+    to{width:85%;}
+}
+
+.nextjs{animation: nextjs 2s forwards;}
+@keyframes nextjs{
+    from{width:0;}
+    to{width:85%;}
+}
+
+.git{animation: git 2s forwards;}
+@keyframes git{
+    from{width:0;}
+    to{width:95%;}
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+    .skills{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:576px){
+    .skills{
+        grid-template-columns: 1fr;
+    }
 }
