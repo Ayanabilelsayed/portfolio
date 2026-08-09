@@ -22,7 +22,7 @@ export default function Projects() {
       image: "/Image/beauty.png",
       par: "HTML5",
       tech: "CSS3",
-      link: "https://ayanabilelsayed.github.io/project2/",
+      link: "https://github.com/Ayanabilelsayed/project2",
     },
     {
       id: 3,
@@ -34,6 +34,7 @@ export default function Projects() {
       par: "UI/UX",
       tech: "Tailwind CSS",
       link: "https://ayanabilelsayed.github.io/project3/",
+        github: "https://github.com/Ayanabilelsayed/project3",
     },
     {
       id: 4,
@@ -68,6 +69,18 @@ export default function Projects() {
       tech: "React",
       link: "https://ayanabilelsayed.github.io/project4/",
     },
+    {
+      id: 7,
+      title: "To-Do List",
+      category: "Web App",
+      description:
+        "A simple to-do list application built with React. It allows users to add, edit, and delete tasks.",
+      image: "/Image/todo.png",
+      par: "JavaScript",
+      tech: "React",
+      link: "https://to-do-chi-ashen.vercel.app/",
+
+    }
 
   ];
 
@@ -209,6 +222,8 @@ export default function Projects() {
                     {project.tech}
                   </span>
                 )}
+
+                
 
               </div>
 
