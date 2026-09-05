@@ -39,6 +39,12 @@ export default function Navbar() {
               Contact
             </a>
           </li>
+
+          <li>
+            <a href="#Certificates" className="hover:text-sky-400 duration-300">
+              Certificates
+            </a>
+          </li>
         </ul>
 
         {/* Desktop Icons */}

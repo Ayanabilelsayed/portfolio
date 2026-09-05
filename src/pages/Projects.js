@@ -39,7 +39,7 @@ export default function Projects() {
     {
       id: 4,
       title: "Portfolio",
-      category: "Portfolio",
+      category: "Web App",
       description:
         "A modern personal portfolio website built with React.",
       image: "/Image/profile.png",
@@ -50,7 +50,7 @@ export default function Projects() {
     {
       id: 5,
       title: "CRUDS",
-      category: "Web App",
+      category: "task",
       description:
         "A CRUD application built with React and Firebase. It allows users to create, read and update .",
       image: "/Image/developer.png",
@@ -61,7 +61,7 @@ export default function Projects() {
      {
       id: 6,
       title: "E-Commerce",
-      category: "Web App",
+      category: "Task",
       description:
         "A responsive e-commerce website built with React and Firebase. It allows users to browse, add, and purchase products.",
       image: "/Image/E-Commerce.png",
@@ -72,7 +72,7 @@ export default function Projects() {
     {
       id: 7,
       title: "To-Do List",
-      category: "Web App",
+      category: "Task",
       description:
         "A simple to-do list application built with React. It allows users to add, edit, and delete tasks.",
       image: "/Image/todo.png",
@@ -80,6 +80,48 @@ export default function Projects() {
       tech: "React",
       link: "https://to-do-chi-ashen.vercel.app/",
 
+    },
+    {
+      id: 8,
+      title: "calculator",
+      category: "Task",
+      description:
+        "A simple calculator application built with React. It allows users to perform basic arithmetic operations.",
+      image: "/Image/calculator.png",
+      par: "JavaScript",
+      tech: "React",
+      link: "https://ayanabilelsayed.github.io/Oasis-Infobyte-Calculator/",
+    },
+    {
+      id: 9,
+      title:"Landing Page",
+      category: "Task",
+      description:
+        "A responsive landing page built with React and Tailwind CSS.",
+      image: "/Image/Landing Page.png",
+      par: "UI/UX",
+      tech: "React, Tailwind CSS",
+      link: "https://ayanabilelsayed.github.io/tribute-page/",
+    },
+    {
+      id:10,
+      title: "todo list",
+      category: "Task",
+      description:"A simple todo list application built with React and Tailwind CSS.",
+      image: "/Image/todo2.png",
+      par: "JavaScript",
+      tech: "React, Tailwind CSS",
+      link: "https://ayanabilelsayed.github.io/task3-todo-web-app/",
+    },
+    {
+      id:11,
+      title: "authentication-system",
+      category: "Task",
+      description:"A simple authentication system built with React and Firebase.",
+      image: "/Image/authentication.png",
+      par: "JavaScript",
+      tech: "React, Firebase",
+      link: "https://ayanabilelsayed.github.io/task4-authentication-system/",
     }
 
   ];
@@ -88,7 +130,7 @@ export default function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");
 
 
-  const categories = ["All", "Web App", "Portfolio"];
+  const categories = ["All", "Web App", "Task"];
 
 
   const filteredProjects =
