@@ -1,6 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
 import heroVideo from "../assets/mainhome.mp4";
-import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
